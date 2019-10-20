@@ -39,6 +39,11 @@ public class Cart {
         return this;
     }
 
+    public Cart removeNewMethod(Item item) {
+        items.remove(item);
+        return this;
+    }
+    
     @Override
     public String toString() {
         return "Cart{" +
